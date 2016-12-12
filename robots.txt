@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /bitrix/
+Allow: /bitrix/*.css
+Allow: /bitrix/*.js
+Allow: /bitrix/*.jpg
+Allow: /bitrix/*.png
+Disallow: /*resize_cache
+Allow: /*resize_cache/*1000_
+Disallow: */?
+Allow: */?PAGEN_1
+Sitemap: http://otoplenieru.ru/sitemap.xml
+Host: otoplenieru.ru

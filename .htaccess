@@ -1,0 +1,179 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+
+#Запароливание
+	#AuthType Basic
+	#AuthName "Private zone. Only for administrator!"
+	#AuthUserFile  /home/m/megent/otoplenieru.ru/public_html/.htpasswd
+	#require valid-user
+
+<IfModule mod_php5.c>
+	php_flag session.use_trans_sid off
+	php_value display_errors 1
+	php_value mbstring.func_overload 2
+	php_value mbstring.internal_encoding UTF-8
+	php_value max_input_vars 10000
+	php_value register_globals off
+	#php_value pcre.recursion_limit 1000
+</IfModule>
+
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	RewriteEngine On
+	
+	#Редиректы с ненужных страницы
+		RedirectMatch 301 ^(.*)/obogrevateli/odo/ $1/obogrevateli/megador/
+
+	#Редиректы со старой структуры
+		RedirectMatch 301 ^(.*)/zebra/otzyvy-o-zebre/$ $1/otzivi/zebra/
+		RedirectMatch 301 ^(.*)/plen/otzyvy-plen/$ $1/otzivi/plen/
+		
+		#RedirectMatch 301 ^(.*)/teplyy-pol/elektricheskie-teplye-poly/$ $1/zebra/teplyi-pol/
+		RedirectMatch 301 ^(.*)/stati/otoplenie-chastnogo-doma/$ $1/#dom
+		RedirectMatch 301 ^(.*)/stati/otoplenie-zagorodnogo-doma/$ $1/#dom
+		RedirectMatch 301 ^(.*)/stati/dlya-zagorodnogo-doma/$ $1/#dom
+		RedirectMatch 301 ^(.*)/stati/otoplenie-zagorodnogo-doma-plen/$ $1/#dom
+		RedirectMatch 301 ^(.*)/akci-skidki/$ $1/akcii/
+		RedirectMatch 301 ^(.*)/stati/teplyy-pol/$ $1/teplyy-pol/
+		RedirectMatch 301 ^(.*)/category/publ/$ $1/stati/
+		RedirectMatch 301 ^(.*)/category/publ/page/2/$ $1/stati/
+		RedirectMatch 301 ^(.*)/certifications/$ $1/
+		RedirectMatch 301 ^(.*)/contacts/$ $1/kontakty/
+		RedirectMatch 301 ^(.*)/download-user/$ $1/files/
+		RedirectMatch 301 ^(.*)/economy/$ $1/plen/raskhod-elektrichestva/
+		RedirectMatch 301 ^(.*)/gallery/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/banya-novozernoe/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/cottage-borovskiy/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/cottage-guseva/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/cottage-utyashevo/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/cottage-v-moskovsky/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/cottage-zaikova/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/dom-bikova/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/dom-lugovoe/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/dom-otoplenie-zebra/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/garage-bereznyaki/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/karkasny-dom-ushakova/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/konushnya-perevalovo/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/lizhnaya-baza/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/otoplenie-chastnogo-doma2/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/otoplenie-detskogo-sada/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/otoplenie-dlya-ofisa/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/otoplenie-doma/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/otoplenie-kotedzha/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/otoplenie-v-chastnom-dome/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/otoplenie-v-garazhe/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/otoplenie-v-sadu/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/plen-v-kitedzhe/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/gallery/plen-v-magazine/$ $1/nashi-raboty/
+		RedirectMatch 301 ^(.*)/infokrsnii-obogref/$ $1/plen/sistema-otopleniya/
+		RedirectMatch 301 ^(.*)/infrakras-obogrevateli/$ $1/obogrevateli/
+		RedirectMatch 301 ^(.*)/kalkylyator/$ $1/
+		RedirectMatch 301 ^(.*)/otoplenie-evo-300-zebra/$ $1/zebra/zebra-evo-300/
+		RedirectMatch 301 ^(.*)/plen-ekonomichnoe-otoplenie/$ $1/zebra/zebra-evo-300/
+		RedirectMatch 301 ^(.*)/plenochnoe-otoplenie/$ $1/plen/sistema-otopleniya/
+		RedirectMatch 301 ^(.*)/plintus-otoplenie/$ $1/plintusnoe-otoplenie/info/
+		RedirectMatch 301 ^(.*)/polza-infokrasnogo-izlychenia/$ $1/zebra/zebra-evo-300/
+		RedirectMatch 301 ^(.*)/preimyshestva_pered/$ $1/zebra/preimushchestva-sistemy/
+		RedirectMatch 301 ^(.*)/princip_teplogo_plintysa/$ $1/plintusnoe-otoplenie/tekhnologiya/
+		RedirectMatch 301 ^(.*)/question-answer/$ $1/vopros-otvet/
+		RedirectMatch 301 ^(.*)/smisl-infokrasnogo-otoplenie/$ $1/zebra/zebra-evo-300/
+		RedirectMatch 301 ^(.*)/solnce-krugli-god-v-vashe-dome/$ $1/zebra/zebra-evo-300/
+		RedirectMatch 301 ^(.*)/standard-series/$ $1/plen/razmernyy-ryad/
+		RedirectMatch 301 ^(.*)/teplyy-pol-zebra-evo-300/$ $1/stati/teplyy-pol/
+		#RedirectMatch 301 ^(.*)/video/$ $1/otzivi/
+		RedirectMatch 301 ^(.*)/video-presentation/$ $1/otzivi/
+		RedirectMatch 301 ^(.*)/как-работает-система-отопления-на-осн/$ $1/plen/sistema-otopleniya/
+		RedirectMatch 301 ^(.*)/о-безопасности-плэн-для-человека/$ $1/
+		RedirectMatch 301 ^(.*)/партнеры/$ $1/partnerstvo/
+		RedirectMatch 301 ^(.*)/применение-плэн/$ $1/plen/primenenie-plen/
+		RedirectMatch 301 ^(.*)/типоразмерный-ряд $1/
+		RedirectMatch 301 ^(.*)/galereya $1/nashi-raboty/
+		
+	#Новые 404 страницы
+		#RedirectMatch 301 ^(.*)/ajax/	/
+		RedirectMatch 301 ^(.*)/elektro-otoplenie/$	/elektricheskoe-otoplenie/
+		RedirectMatch 301 ^(.*)/arrangements/	/
+		RedirectMatch 301 ^(.*)/patents/	/
+		RedirectMatch 301 ^(.*)/reviews/	/
+		RedirectMatch 301 ^(.*)/predl/xls/	/
+		RedirectMatch 301 ^(.*)/prices/	/prays-list/
+		RedirectMatch 301 ^(.*)/articles/	/
+		RedirectMatch 301 ^(.*)/catalog/	/
+		RedirectMatch 301 ^(.*)/goods/	/
+		RedirectMatch 301 ^(.*)/m/	/
+		RedirectMatch 301 ^(.*)/mobile/	/
+		RedirectMatch 301 ^(.*)/news/	/
+		RedirectMatch 301 ^(.*)/stats/	/
+		RedirectMatch 301 ^(.*)/wp-content/	/
+		RedirectMatch 301 ^(.*)/videos/	/video/
+		RedirectMatch 301 ^(.*)/gallery/	/nashi-raboty/
+		RedirectMatch 301 ^(.*)/отопление-плэн-в-саду/	/
+		RedirectMatch 301 ^(.*)/licenses/	/files/
+		RedirectMatch 301 ^(.*)/documentation/	/files/
+		RedirectMatch 301 ^(.*)/stati/podderzhka-kachestvennoi-raboty-plen/feed/	/stati/
+
+		
+		#RewriteCond %{REQUEST_URI} ^/dop/(.*)$ [NC]
+		#RewriteRule ^dop/(.*)$ /termoregulyatory/$1 [L,R=301]
+		
+		#RewriteCond %{REQUEST_URI} ^/termoregulyatory/(.*)$ [NC]
+		#RewriteRule ^termoregulyatory/(.*)$ /dop/$1 [L,R=301]
+		
+		RewriteCond %{REQUEST_URI} ^/dop/termoregulyatory/(.*)$ [NC]
+		RewriteRule ^dop/termoregulyatory/(.*)$ /termoregulyatory/$1 [L,R=301]
+		
+		RedirectMatch 301 ^(.*)/dop/grand-meyer-pst-3/$ $1/termoregulyatory/grand-meyer-pst-3/
+		RedirectMatch 301 ^(.*)/dop/termoregulyator-eberle-rtr-e-3563/$ $1/termoregulyatory/termoregulyator-eberle-rtr-e-3563/
+		RedirectMatch 301 ^(.*)/dop/termoregulyator-rtc-70-16/$ $1/termoregulyatory/termoregulyator-rtc-70-16/
+		RedirectMatch 301 ^(.*)/dop/termoregulyator-rtc-70-26/$ $1/termoregulyatory/termoregulyator-rtc-70-26/
+		RedirectMatch 301 ^(.*)/dop/termoregulyator-rtc-e51-716/$ $1/termoregulyatory/termoregulyator-rtc-e51-716/
+		RedirectMatch 301 ^(.*)/dop/termoregulyator-rtc-e91-716/$ $1/termoregulyatory/termoregulyator-rtc-e91-716/
+	
+	# Редирект www.плэн72.рф -> otoplenieru.ru
+		RewriteCond %{HTTP_HOST} ^(www\.)?xn--72-4lcii9f\.xn--p1ai$
+		RewriteRule ^(.*)$ http://otoplenieru.ru/ [R=301,L]
+
+	# Редирект www.site.ru -> site.ru
+		RewriteCond %{HTTP_HOST} !^otoplenieru\.ru$ [NC]
+		RewriteCond %{REQUEST_FILENAME} !robots.txt$
+		RewriteRule ^(.*)$ http://otoplenieru.ru/$1 [R=301,L]
+
+	# Редирект index, default, home -> /
+		RewriteCond %{THE_REQUEST} ^(.*)index\.(php|html|htm)\ HTTP/ [NC,OR]
+		RewriteCond %{THE_REQUEST} ^(.*)default\.(asp|aspx)\ HTTP/ [NC,OR]
+		RewriteCond %{THE_REQUEST} ^(.*)home\.(html|htm)\ HTTP/ [NC]
+		RewriteRule (.*)(index\.(php|html|htm)|default\.(asp|aspx)|home\.(html|htm)) /$1 [R=301,L]
+
+	# Редирект на ссылки без слеша, который не действует на файлы
+		RewriteCond %{REQUEST_FILENAME} !-f
+		RewriteCond %{REQUEST_URI} !(.*)/$
+		RewriteCond %{REQUEST_URI} !\..{1,10}$
+		RewriteRule ^(.*)$ /$1/ [L,R=301]
+		
+	# Редирект с // на /
+		RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(([^/]+/)*)/\ HTTP/ [NC]
+		RewriteRule (.*)/ /$1 [R=301,L]
+		
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-l
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+	RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+	RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+</IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType image/jpeg "access plus 3 day"
+  ExpiresByType image/gif "access plus 3 day"
+  ExpiresByType image/png "access plus 3 day"
+  ExpiresByType text/css "access plus 3 day"
+  ExpiresByType application/javascript "access plus 3 day"  
+</IfModule>
+AddDefaultCharset utf-8
+AddType 'text/html; charset=utf-8' .html .htm .shtml
