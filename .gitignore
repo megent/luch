@@ -7,14 +7,15 @@
 *.iml
 out
 gen
-/bitrix/
 /bitrix/cache/
 /bitrix/managed_cache/
 /bitrix/stack_cache/
 /bitrix/tmp/
 /bitrix/backup/
 /upload/
-/local/
 *.log
 /bitrix/[^/]*\.php$
+/bitrix/admin/
+/bitrix/components/
+/bitrix/modules/
 
