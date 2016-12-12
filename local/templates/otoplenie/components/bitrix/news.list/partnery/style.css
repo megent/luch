@@ -1,0 +1,13 @@
+div.el-part span:last-child {
+    float: right;
+}
+div.el-part span.p-name {
+	width: 40%;
+	display: inline-block;
+}
+div.el-part {
+    width: 100%;
+    /* border-top: 1px solid #000; */
+	border-bottom: 1px solid #999;
+    padding: 5px 0;
+}

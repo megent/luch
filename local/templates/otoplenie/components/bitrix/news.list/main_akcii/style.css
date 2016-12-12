@@ -1,0 +1,61 @@
+.akcii-next, .akcii-prev {
+	position: absolute;
+	padding: 0;
+	color: #242424;
+	outline: none;
+	bottom: -2px;
+	right: 17px;
+	font-size: 14.7px;
+	cursor: pointer;
+	border: none;
+	border-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0);
+	border-bottom: 1px dashed #000;
+	font: 15px 'Roboto', sans-serif !important;
+    font-weight: 300;
+}
+.akcii-next:hover {
+	border-bottom: 1px dashed #555;
+}
+/*.main-pr-line7 .akcii-next {
+	position: absolute;
+	right: 30px;
+	bottom: 28px;
+	text-decoration: none;
+	border-bottom: 1px dashed #000;
+	height: 15px;
+}*/
+.main-pr-line7 .ico-lenta-akcii {
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	background: url("/local/templates/otoplenie/img/ico_lenta_akcii.png") no-repeat;
+	width: 53px;
+	height: 71px;
+	z-index: 999;
+}
+.main-pr-line7 .akcii-title {
+	font-weight: bold;
+	color: #FFF;
+	margin: 25px 15px 5px 30px;
+	overflow: hidden;
+	height: 35px;
+}
+.main-pr-line7 .akcii-more {
+	position: absolute;
+	left: 30px;
+	bottom: 20px;
+}
+.main-pr-line7 .akcii-next:hover {
+	color: #B2496E;
+	border-bottom: 1px dashed transparent;
+}
+.main-pr-line7 .akcii-title2 {
+	color: #FFF;
+	padding: 0 10px 0 30px;
+}
+.main-pr-line7 .akcii-desc {
+	margin: 30px;
+	height: 197px;
+	overflow: hidden;
+}

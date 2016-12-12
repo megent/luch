@@ -1,0 +1,84 @@
+.faq-list .faq-title {
+	font-weight: 600;
+	color: #969696;
+	margin-bottom: 10px;
+	float: left;
+	margin-right: 10px;
+}
+.faq-list .faq-otvet {
+	border-top: 1px solid #e6e6e6;
+	margin: 20px -30px 0;
+	padding: 20px 30px 0;
+}
+.faq-list .otv-metka {
+	color: #b2496e;
+	font-weight: bold;
+	padding-right: 15px;
+	float: left;
+}
+.faq-list .faq-txt {
+	padding-left: 64px;
+}
+.faq-list .faq-autor {
+	text-align: right;
+	margin-top: 10px;
+}
+.faq-list .hide-otvet {
+	float: right;
+}
+.faq-list .show-otvet, .faq-list .hide-otvet {
+  color: #B2496E;
+  font-weight: bold;
+  border-bottom: 1px dashed #B2496E;
+  cursor: pointer;
+}
+.faq-list .show-otvet:hover {
+  color: #930E3D;
+  border-bottom: 1px dashed #930E3D;
+}
+.faq-old {
+	display: inline-block;
+	font-size: 22px;
+	margin: 20px 0;
+	font-weight: bold;
+	color: #5C5C5C;
+	line-height: 30px;
+}
+.faq-form .lnk-hide-form {
+	top: 40px;
+}
+.faq-form .lnk-show-form {
+	top: 37px;
+}
+form#form-vopros {
+	padding-bottom: 25px;
+}
+#form-vopros textarea{
+	height: 150px;
+}
+#form-vopros input.btn-bg, #form-vopros input.btn-bg:hover {
+	display: inline-block;
+	margin: 22px 5px 0px 0px;
+	min-width: 200px !important;
+	padding: 14px 0px 14px 12px;
+}
+#form-vopros .form-btn-wrap {
+	position: relative;
+	float: right;
+}
+#form-vopros .form-btn-wrap i {
+	position: absolute;
+	left: 24px;
+	bottom: 17px;
+	background: url(/local/templates/otoplenie/img/ico_email_w.png) 0px 2px no-repeat;
+	width: 15px;
+	height: 14px;
+}
+.faq-list .form-title {
+	padding-left: 40px;
+	background: url(/local/templates/otoplenie/img/ico_faq_tit.png) 0px 3px no-repeat;
+}
+#form-vopros span.form-atten {
+	position: absolute;
+	bottom: 15px;
+}
