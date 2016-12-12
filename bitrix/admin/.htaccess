@@ -1,0 +1,5 @@
+order deny,allow
+deny from all
+allow from 194.15.127.250 #Прокси
+allow from 188.186.184.43 #IQ
+allow from 188.186.180.78 #Клиент

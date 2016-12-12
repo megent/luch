@@ -15,7 +15,4 @@ gen
 /upload/
 *.log
 /bitrix/[^/]*\.php$
-/bitrix/admin/
-/bitrix/components/
-/bitrix/modules/
 
