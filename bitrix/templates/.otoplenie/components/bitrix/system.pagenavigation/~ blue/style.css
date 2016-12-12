@@ -1,0 +1,26 @@
+.nav-pages {
+background: url(/bitrix/templates/main_burvoda/img/f_left_menu.png) repeat;
+display: table;
+margin: 0 auto;
+padding: 8px 5px;
+border-radius: 3px;
+}
+.nav-pages a {
+text-decoration: none;
+padding: 12px 9px;
+margin: 0px 1px;
+color: #FFF;
+}
+.nav-pages span {
+padding: 12px 9px;
+color:#FFF;
+background: url(/bitrix/templates/main_burvoda/img/f_pagen_hover.png) repeat-x;
+border-radius: 3px;
+box-shadow: 0px 0px 5px #5A66BE;
+}
+.nav-pages a:hover {
+background: url(/bitrix/templates/main_burvoda/img/f_pagen_hover.png) repeat-x;
+border-radius: 3px;
+color: #FFF;
+box-shadow: 0px 0px 5px #5A66BE;
+}

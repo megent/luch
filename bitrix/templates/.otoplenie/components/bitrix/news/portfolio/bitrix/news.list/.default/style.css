@@ -1,0 +1,65 @@
+.port-item {
+	width: 445px;
+	height: 315px;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 5px;
+	margin-right: 13px;
+	margin-bottom: 13px;
+}
+.port-title {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 136px;
+	width: 385px;
+	font-size: 17px;
+	z-index: 2;
+	padding: 23px 30px 0 30px;
+	background: url("/bitrix/templates/otoplenie/img/slider_port_bg.png") repeat-x;
+}
+.port-title a {
+  color: #FFF;
+}
+.port-next.slick-disabled, .port-prev.slick-disabled {
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30); /* фильтры для IE 5.5+ */
+	-moz-opacity: 0.3; /* Mozilla 1.6 и ниже */
+	-khtml-opacity: 0.3; /* Konqueror 3.1, Safari 1.1 */
+	opacity: 0.3; /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9 */
+	
+	cursor: default;
+}
+.port-next, .port-prev {
+	position: absolute;
+	padding: 0;
+	outline: none;
+	cursor: pointer;
+	border-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0);
+	width: 35px;
+	height: 71px;
+	top: 39%;
+	z-index: 3;
+}
+.port-prev {
+	background: url("/bitrix/templates/otoplenie/js/slick/slide_arr_mini.png") 0px -2px no-repeat;
+}
+.port-next {
+	background: url("/bitrix/templates/otoplenie/js/slick/slide_arr_mini.png") -35px -2px no-repeat;
+	right: 0px;
+}
+.port-prev:hover {
+	background: url("/bitrix/templates/otoplenie/js/slick/slide_arr_mini.png") 0px -73px no-repeat;
+}
+.port-prev:hover.slick-disabled {
+	background: url("/bitrix/templates/otoplenie/js/slick/slide_arr_mini.png") 0px -2px no-repeat;
+}
+.port-next:hover {
+	background: url("/bitrix/templates/otoplenie/js/slick/slide_arr_mini.png") -35px -73px no-repeat;
+	right: 0px;
+}
+.port-next:hover.slick-disabled {
+	background: url("/bitrix/templates/otoplenie/js/slick/slide_arr_mini.png") -35px -2px no-repeat;
+	right: 0px;
+}

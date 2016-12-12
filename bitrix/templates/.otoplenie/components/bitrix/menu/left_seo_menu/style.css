@@ -1,0 +1,107 @@
+/*СЕО меню*/
+.ls_menu-wrap {
+    background: #F4F4F4;
+    margin-bottom: 20px;
+}
+#ls_menu {
+    border-radius: 4px;
+    overflow: hidden;
+}
+.accordion > li ul {
+	display: none;
+}
+#ls_menu {
+	background: #F4F4F4;
+	border-radius: 4px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+#ls_menu1 > li > a, #ls_menu2 > li > a {
+	text-decoration: none;
+	display: block;
+	padding: 11px 27px;
+}
+#ls_menu1 > li, #ls_menu2 > li {
+	border-bottom: 1px solid #E6E6E6;
+}
+#ls_menu ul li:last-child {
+	border-bottom: none;
+}
+#ls_menu .left-title1 {
+	padding: 17px 27px;
+	background: #BB517A;
+	color: #FFF;
+	font-size: 20px;
+}
+#ls_menu .left-title2 {
+	padding: 12px 27px;
+	background: #BB517A;
+	color: #FFF;
+}
+#ls_menu1 > li, #ls_menu2 > li {
+	cursor: pointer;
+}
+#ls_menu1 > li > ul {
+	cursor: default;
+}
+#ls_menu1 > li > span {
+	display: block;
+	padding: 11px 27px;
+	margin-left: 18px;
+}
+li i.ico-arr {
+	display: block;
+	margin: 12px 14px 0px 25px;
+	float: left;
+	background: url("/bitrix/templates/otoplenie/img/ico_arr_rigft.png") 0px 0px no-repeat;
+	width: 6px;
+	height: 11px;
+}
+li.selected i.ico-arr {
+	background: url("/bitrix/templates/otoplenie/img/ico_arr_down.png") 0px 0px no-repeat;
+	width: 11px;
+	height: 6px;
+	margin: 15px 9px 0px 25px;
+}
+#ls_menu1 > li:hover, #ls_menu2 > li:hover {
+	background: #E2E2E2;
+	cursor: pointer;
+}
+ul#ls_menu1 ul li a {
+    padding-left: 8px;
+    display: inline-block;
+	text-decoration: none;
+}
+ul#ls_menu1 ul li a span {
+	text-decoration: underline;
+}
+ul#ls_menu1 ul li a:hover span {
+	text-decoration: none;
+}
+#ls_menu ul li ul li a:before {
+	color: #b2496e; /* Цвет маркера */
+	content: "• "; /* Сам маркер */
+	padding-right: 4px; /* Расстояние от маркера до текста */
+	font-size: 16px;
+	margin-left: -13px;
+}
+#ls_menu .root-item-selected, #ls_menu .item-selected {
+	color: #B2496E;
+}
+nav#ls_menu ul li ul {
+	margin: 0px 0px 0px 44px;
+    padding-bottom: 15px;
+	padding-right: 10px;
+}
+nav#ls_menu ul li ul li {
+	padding: 3px 0;
+}
+/*СЕО меню*/
+.ls_menu-wrap {
+    background: #F4F4F4;
+    margin-bottom: 20px;
+}
+#ls_menu {
+    border-radius: 4px;
+    overflow: hidden;
+}

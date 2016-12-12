@@ -1,0 +1,388 @@
+.click {
+	cursor: pointer;
+}
+/*Страница контакты*/
+.contact-wrap div {
+	display: inline-block;
+}
+.contact-wrap span.tit {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 15px;
+}
+.contact-wrap .adres {
+  width: 280px;
+  margin-right: 40px;
+}
+.contact-wrap i {
+	height: 22px;
+	margin-right: 7px;
+	display: inline-block;
+}
+.contact-wrap .adres i {
+	background: url("/bitrix/templates/otoplenie/img/ico_contact.png") 0px 0px no-repeat;
+	width: 30px;
+}
+.contact-wrap .phone i {
+	background: url("/bitrix/templates/otoplenie/img/ico_contact.png") -27px 1px no-repeat;
+	width: 27px;
+}
+.contact-wrap .mail i {
+	background: url("/bitrix/templates/otoplenie/img/ico_contact.png") -50px 1px no-repeat;
+	width: 30px;
+}
+.contact-wrap .phone {
+  width: 300px;
+  margin-right: 40px;
+}
+.contact-wrap .mail {
+}
+.contact-wrap .lnk-callback {
+	padding-left: 20px;
+	margin-left: 15px;
+}
+.cont-ln2 .rejim {
+	display: inline-block;
+	width: 280px;
+	height: 155px;
+	padding: 30px;
+	border: 1px solid #BBB;
+	overflow: hidden;
+}
+.rejim .rej-tit {
+	font-weight: bold;
+	color: #555;
+}
+.rejim ul {
+	margin-left: 0px !important;
+}
+.rejim .rej-bot {
+	border-top: 2px solid #D7759B;
+	text-align: center;
+	display: block;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+.cont-ln2 #vk_groups {
+	float: right;
+}
+#cont-map {
+	width: 913px;
+	height: 490px;
+	margin-top: 20px;
+}
+/*Стили для форм*/
+.inp_inv {
+	display: none;
+}
+.form-title {
+	display: inline-block;
+	font-size: 22px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #5C5C5C;
+	line-height: 30px;
+}
+.form-desc {
+	width: 600px;
+}
+span.form-separ {
+	border-bottom: 1px solid #E6E6E6;
+	display: block;
+	margin: 25px -30px;
+}
+.form-style .field-wrapper {
+	display: inline-block;
+	width: 250px;
+}
+span.form-atten {
+	display: none;
+	margin: 10px 0;
+	color: #BB517A;
+}
+.form-style input.btn-bg, .form-style input.btn-bg:hover, .form-style input.btn-bg:active {
+	float: right;
+	border: none;
+}
+.form-style span.field-name {
+  display: block;
+  margin-bottom: 10px;
+}
+.form-style span.starred {
+  float: left;
+  height: 12px;
+  margin: 1px 5px 0px 0px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: #FFF;
+  background-color: #BB517A;
+}
+.field-cont-wrapper {
+  margin-top: 20px;
+}
+input {
+	border-radius: 4px;
+	border: 1px solid #CACACA;
+	padding: 4px 10px;
+	font-size: 14.7px;
+	outline: none;
+}
+input:focus, input:hover, textarea:focus, textarea:hover {
+	border: 1px solid #BB517A;
+}
+textarea {
+	width: 97%;
+	resize: none;
+	border-radius: 4px;
+	border: 1px solid #CACACA;
+	padding: 4px 10px;
+	font-size: 14.7px;
+	outline: none;
+}
+.form-wrap-check {
+  display: inline-block;
+  margin-top: 20px;
+	-webkit-user-select: none;
+}
+.form-wrap-check:hover {
+	color: #BB517A;
+	cursor: pointer;
+}
+.form-wrap-check:before {
+	content: "";
+	background: url(/bitrix/templates/otoplenie/img/ico_check_on.png) 0px 0px no-repeat;
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin-right: 5px;
+}
+.form-wrap-check.no-check:before {
+	content: "";
+	background: url(/bitrix/templates/otoplenie/img/ico_check_off.png) 0px 0px no-repeat;
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin-right: 5px;
+}
+span.lnk-show-form {
+	position: absolute;
+	right: 30px;
+	top: 18px;
+	border-bottom: 1px dashed #717171;
+	cursor: pointer;
+	min-width: 190px;
+}
+.lnk-show-form:before {
+	content: "";
+	background: url(/bitrix/templates/otoplenie/img/ico_email_w.png) 0px 2px no-repeat;
+	width: 15px;
+	height: 14px;
+	display: inline-block;
+	margin-right: 5px;
+}
+span.lnk-hide-form {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	border-bottom: 1px dashed #717171;
+	cursor: pointer;
+}
+span.lnk-hide-form:hover {
+	border-bottom: 1px dashed #BB517A;
+	color: #BB517A;
+}
+/*Всплывающие*/
+.bl-forms {
+	display: none;
+	position: fixed;
+	bottom: 0px;
+	/* min-height: 230px; */
+	background: rgba(44, 44, 44, 0.9);
+	width: 100%;
+	text-align: center;
+	color: #FFF;
+	border-top: 5px solid #BB517A;
+	padding-top: 30px;
+	z-index: 9999;
+}
+.vform-title {
+	font-size: 25px;
+	font-weight: bold;
+}
+.vform-separ {
+	display: block;
+	border-top: 1px solid #C26287;
+	width: 225px;
+	margin: 30px auto 20px;
+}
+.bl-forms input#vbtn-send {
+	border: none;
+}
+.bl-forms .form-btn-wrap {
+	display: block;
+	width: 180px;
+	margin: 0 auto 20px;
+	position: relative;
+}
+.bl-forms .form-btn-wrap input {
+	min-width: 180px;
+	padding-left: 45px;
+}
+.bl-forms .form-btn-wrap:before {
+  content: "";
+  background: url(/bitrix/templates/otoplenie/img/ico_email_w.png) 0px 2px no-repeat;
+  width: 15px;
+  height: 14px;
+  display: inline-block;
+  position: absolute;
+  top: 11px;
+  left: 40px;
+}
+.bl-forms .field-name {
+	display: inline-block;
+	margin: 0 2px 0 0;
+}
+.bl-forms .starred {
+	float: left;
+	height: 12px;
+	margin: 4px 5px 0px 0px;
+	padding: 2px 5px;
+	border-radius: 5px;
+	color: #FFF;
+	background-color: #BB517A;
+}
+.bl-forms .field-wrapper {
+	display: inline-block;
+	width: 285px;
+	margin-bottom: 20px;
+	text-align: left;
+}
+.bl-forms .vform-close {
+	background: #BB517A url(/bitrix/templates/otoplenie/img/ico_vform_closex.png) 16px 16px no-repeat;
+	width: 23px;
+	height: 23px;
+	padding: 16px;
+	border-radius: 40px;
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	cursor: pointer;
+}
+.bl-forms .vform-close:hover {
+	background-color: #7A173A;
+}
+.bl-forms-wrap {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.bl-forms-wrap > div {display: none;}
+input.error, textarea.error {
+	box-shadow: inset 0px 0px 15px #B2496E;
+	border: 1px solid #B2496E;
+}
+#vform-raschet .vf-left-bl .starred,  #vform-zakaz .vf-left-bl .starred{
+	display: inline-block;
+	margin: 0px 5px 0px 0px;
+	float: none;
+}
+#vform-raschet .vf-left-bl, #vform-zakaz .vf-left-bl {
+	width: 455px;
+	display: inline-block;
+}
+.vf-left-bl .field-wrapper {
+	text-align: right;
+	width: 400px;
+}
+#vform-raschet .field-wrapper-comment, #vform-zakaz .field-wrapper-comment {
+	display: inline-block;
+}
+#vform-raschet .field-wrapper-comment textarea, #vform-zakaz .field-wrapper-comment textarea {
+	height: 125px;
+	width: 300px;
+	margin-bottom: -6px;
+}
+#vform-zakaz .field-wrapper-comment textarea {
+	height: 62px;
+}
+#vform-raschet .field-wrapper-comment .field-name, #vform-zakaz .field-wrapper-comment .field-name {
+	text-align: left;
+	display: block;
+	margin-bottom: 6px;
+}
+/*Монтаж круглый год*/
+.all-year {
+    position: absolute;
+    top: 0px;
+    left: 705px;
+    display: block;
+    height: 50px;
+    width: 105px;
+    background: #BB517A;
+    color: #FFF;
+    font-weight: 500;
+    padding: 39px 0px 0px 20px;
+    font-size: 16px;
+}
+.all-year i {
+    background: url('/bitrix/templates/otoplenie/img/snezhinka.png') no-repeat;
+    position: absolute;
+    width: 32px;
+    height: 35px;
+    top: 30px;
+    left: -15px;
+}
+/*end*/
+
+/*СЕО каталог*/
+.el-item {
+    float: left;
+    margin-right: 20px;
+}
+.block-title {
+	font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+.el-item:hover {
+    background: #E2E2E2;
+}
+
+.mg-r15 {margin-right: 15px;}
+.mg-r20 {margin-right: 20px;}
+.mg-r25 {margin-right: 25px;}
+.mg-r75 {margin-right: 75px;}
+
+.mg-l10 {margin-left: 10px;}
+.mg-l15 {margin-left: 15px;}
+.mg-l20 {margin-left: 20px;}
+.mg-l25 {margin-left: 25px;}
+.mg-l30 {margin-left: 30px;}
+.mg-l35 {margin-left: 35px;}
+.mg-l75 {margin-left: 75px;}
+
+.mg-t10 {margin-top: 10px;}
+.mg-t15 {margin-top: 15px;}
+.mg-t20 {margin-top: 20px;}
+.mg-t25 {margin-top: 25px;}
+.mg-t75 {margin-top: 75px;}
+
+.mg-b10 {margin-bottom: 10px;}
+.mg-b15 {margin-bottom: 15px;}
+.mg-b20 {margin-bottom: 20px;}
+.mg-b25 {margin-bottom: 25px;}
+
+.lnk-title {
+	font-size: 16px !important;
+	padding-top: 12px;
+    text-align: center;
+	margin-bottom: 0px !important;
+	width: 220px;
+}
+
+.lnk-hide {
+    border-top: 1px solid #B2496E;
+    margin-top: 20px;
+}
